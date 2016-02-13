@@ -2,7 +2,10 @@ Template.HomeLayout.events({
     //click to toggle answer view
     "click #viewCard": function() {
         $('.card span').css({'opacity': '1'});
-    }
+    },
+    //cycle through example flash cards
+
+
 
 });
 
