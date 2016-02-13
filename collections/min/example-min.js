@@ -1,0 +1,1 @@
+Example=new Mongo.Collection("example"),Example.insert({"What is the formula to find slope?":"Your Answer!","Who was the 4th President?":"Your Answer!!"});

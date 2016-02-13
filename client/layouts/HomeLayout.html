@@ -1,0 +1,45 @@
+<template name="HomeLayout">
+    <main class="landingPage">
+        <header class="main-header">
+            <div class="button" id="login">
+                {{> loginButtons}}
+            </div>
+            <h1>Study Smart</h1>
+        </header>
+        <div class="intro-block">
+            <div class="intro-text">
+                <h2>What is Study Smart?</h2>
+                <p>
+                    Study smart is a flash card base study tool with a twist!
+                    Did you know that changing the font style and color periodically
+                    helps improve your memory!?
+                </p>
+                <p>
+                    You make the flash cards and we take care of the rest!
+                </p>
+            </div>
+        </div>
+        <div class="card-example">
+            <div class="card">
+                <h2>Welcome to Smart Flash Cards</h2>
+                <p>
+                    What is the equation to find the slope?
+                </p>
+                <span>Your answer!!</span>
+                <div id="viewCard" class="button">
+                    <i class="fa fa-eye"></i>
+                </div>
+                <div id="nextCard" class="button">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pops up when user clicks on sign up/login btn -->
+    <!-- <section href="#login" class="loginWrapper">
+        <div class="loginCard">
+            {{> loginButtons}}
+        </div>
+    </section> -->
+</template>

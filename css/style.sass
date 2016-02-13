@@ -1,0 +1,169 @@
+//----------
+//Colors
+//---------
+$primary: #85A4CE
+$accent: #9BE893
+$shadow: rgba(0, 0, 0, 0.5)
+$black: #000
+$white: #fff
+//--------
+//Fonts
+//--------
+$main: 'Open Sans', sans-serif
+$secondary: 'caviar_dreamsregular', sans-serif
+$aladin: 'Aladin', cursive
+$advent: 'Advent Pro', sans-serif
+$alex: 'Alex Brush', cursive
+//---------
+//Start of styles
+//--------
+html
+    margin: 0
+    padding: 0
+body
+    font-size: 15px
+    letter-spacing: 0.0125rem
+    padding: 0
+    margin: 0
+.button
+    background-color: $accent
+    border: none
+    padding: 10px
+    width: auto
+    box-shadow: 2px 2px 5px $shadow
+    font-family: $secondary
+    &:hover
+        cursor: pointer
+h1
+    font-family: $secondary
+    text-align: center
+    color: $white
+    text-shadow: 4px 4px 10px $shadow
+    margin: 0
+    padding: 0
+h2
+    margin: 0
+    padding: 0
+    font-family: $main
+
+.landingPage
+    height: 100vh
+.main-header
+    background-image: url(../images/header-bkg.png)
+    background-size: cover
+    background-position: center
+    height: 25vh
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    .button
+        position: absolute
+        font-size: 1.2rem
+        top: 10px
+        right: 10px
+        a:hover
+            text-decoration: none
+        &:hover
+            background-color: rgba($accent, 0.8)
+            color: rgba($black, 0.8)
+            box-shadow: 4px 4px 10px $shadow
+    h1
+        font-size: 6rem
+
+.hide
+    display: none
+.show
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+.dropup, .dropdown
+    list-style: none
+#login-dropdown-list a
+    color: black
+    font:
+        size: 1.2rem
+        family: $main
+.dropdown-menu
+    right: 0 !important
+    left: -300%
+.caret
+    display: none
+.btn-primary
+    background-color: $primary
+    border-color: $primary
+.loginWrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+.intro-block
+    display: flex
+    height: 20vh
+    align-items: center
+    justify-content: center
+    background-color: $primary
+    text-align: center
+    padding: 20px
+    h2
+        color: $white
+        size: 1.8rem
+        margin: 0 0 15px 0
+    p
+        color: $white
+        font:
+            family: $main
+            size: 1.5rem
+            weight: 300
+.intro-text
+    max-width: 800px
+.card-example
+    display: flex
+    flex-direction: row
+    height: 50%
+    align-items: center
+    justify-content: center
+.card
+    position: relative
+    width: 80%
+    padding: 10px
+    max-width: 800px
+    height: 300px
+    box-shadow: 2px 2px 5px $shadow
+    display: flex
+    align-items: center
+    flex-direction: column
+    h2
+        text-align: center
+        font:
+            family: $main
+            size: 2.5rem
+    p
+        margin-top: 50px
+        text-align: center
+        font:
+            font-family: $main
+            weight: 300
+            size: 1.5rem
+    span
+        opacity: 0
+        font-size: 2rem
+        margin-top: 20px
+        text-align: center
+        width: 100%
+    .button
+        position: absolute
+        padding: 15px
+        font-size: 1.4rem
+        color: $white
+        &:hover
+            transition: all ease-in-out 0.3s
+            background-color: rgba($accent, 0.8)
+            color: $black
+    #viewCard
+        bottom: 10px
+        right: 60px
+    #nextCard
+        bottom: 10px
+        right: 10px

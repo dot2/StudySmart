@@ -1,0 +1,1 @@
+Template.HomeLayout.events({"click #viewCard":function(){}});
