@@ -69,7 +69,8 @@ h2 {
 .header {
   height: 10vh !important;
   background-color: #85A4CE !important;
-  background-image: none; }
+  background-image: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
 
 .hide {
   display: none; }
@@ -164,7 +165,7 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.card {
+.card, .card-intro-deck {
   position: relative;
   width: 80%;
   padding: 10px;
@@ -184,38 +185,58 @@ h2 {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .card h2 {
+  .card h2, .card-intro-deck h2 {
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-size: 2.5rem; }
-  .card p {
+  .card p, .card-intro-deck p {
     margin-top: 50px;
     text-align: center;
     font-font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 2rem; }
-  .card span {
+  .card span, .card-intro-deck span {
     opacity: 0;
     font-size: 2rem;
     margin-top: 20px;
     text-align: center;
     width: 100%; }
-  .card .button {
+  .card .button, .card-intro-deck .button {
     position: absolute;
     padding: 15px;
     font-size: 1.4rem;
     color: #fff; }
-    .card .button:hover {
+    .card .button:hover, .card-intro-deck .button:hover {
       -webkit-transition: all ease-in-out 0.3s;
       transition: all ease-in-out 0.3s;
       background-color: rgba(155, 232, 147, 0.8);
       color: #000; }
-  .card #viewCard {
+  .card #viewCard, .card-intro-deck #viewCard {
     bottom: 10px;
     right: 60px; }
-  .card #nextCard {
+  .card #nextCard, .card-intro-deck #nextCard {
     bottom: 10px;
     right: 10px; }
+
+.card-intro-deck {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .card-intro-deck:hover {
+    background-color: rgba(133, 164, 206, 0.5);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5); }
 
 .by {
   right: 0;
@@ -237,9 +258,50 @@ h2 {
   z-index: 99; }
 
 .card-wrapper {
-  margin: 5%;
-  max-width: 1000px;
+  padding: 5%;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.fab {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9BE893;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .fab:hover {
+    background-color: rgba(155, 232, 147, 0.8);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8) !important; }
