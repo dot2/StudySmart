@@ -4,7 +4,10 @@ Template.HomeLayout.events({
         $('.card span').css({'opacity': '1'});
     },
     //cycle through example flash cards
-
+    "click #nextCard": function() {
+        $('.card p').replaceWith("<p>Wow, Next Question!</p>");
+        $('.card span').replaceWith("<span>You probably know how flash cards work.</span>");
+    }
 
 
 });
@@ -20,6 +23,8 @@ Template.HomeLayout.onRendered(function () {
         $('.card span').delay(2000).animate({'color': '#85a4ce'});
         $('.card span').delay(6000).animate({'color': '#9be893'});
         $('.card span').delay(8000).animate({'color': '#000'});
+
+        setInterval(cardAnimate, 20000);
     };
     //calls the function
     cardAnimate();

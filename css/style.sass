@@ -48,7 +48,7 @@ h2
 
 .landingPage
     height: 100vh
-.main-header
+.main-header,.header
     background-image: url(../images/header-bkg.png)
     background-size: cover
     background-position: center
@@ -70,7 +70,10 @@ h2
             box-shadow: 4px 4px 10px $shadow
     h1
         font-size: 6rem
-
+.header
+    height: 10vh !important
+    background-color: $primary !important
+    background-image: none
 .hide
     display: none
 .show
@@ -182,6 +185,12 @@ h2
         size: 1.4rem
 .twitter-btn
     position: fixed
-    right: 15%
+    right: 150px
     bottom: 0
     z-index: 99
+.card-wrapper
+    margin: 5%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center

@@ -34,28 +34,42 @@ h2 {
 .landingPage {
   height: 100vh; }
 
-.main-header {
+.main-header, .header {
   background-image: url(../images/header-bkg.png);
   background-size: cover;
   background-position: center;
   height: 25vh;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center; }
-  .main-header .button {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main-header .button, .header .button {
     position: absolute;
     font-size: 1.2rem;
     top: 10px;
     right: 10px; }
-    .main-header .button a:hover {
+    .main-header .button a:hover, .header .button a:hover {
       text-decoration: none; }
-    .main-header .button:hover {
+    .main-header .button:hover, .header .button:hover {
       background-color: rgba(155, 232, 147, 0.8);
       color: rgba(0, 0, 0, 0.8);
       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); }
-  .main-header h1 {
+  .main-header h1, .header h1 {
     font-size: 6rem; }
+
+.header {
+  height: 10vh !important;
+  background-color: #85A4CE !important;
+  background-image: none; }
 
 .hide {
   display: none; }
@@ -86,16 +100,34 @@ h2 {
   border-color: #85A4CE; }
 
 .loginWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute; }
 
 .intro-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 20vh;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #85A4CE;
   text-align: center;
   padding: 20px; }
@@ -113,11 +145,24 @@ h2 {
   max-width: 800px; }
 
 .card-example {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 50%;
-  align-items: center;
-  justify-content: center; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .card {
   position: relative;
@@ -126,9 +171,19 @@ h2 {
   max-width: 800px;
   height: 300px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .card h2 {
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -151,6 +206,7 @@ h2 {
     font-size: 1.4rem;
     color: #fff; }
     .card .button:hover {
+      -webkit-transition: all ease-in-out 0.3s;
       transition: all ease-in-out 0.3s;
       background-color: rgba(155, 232, 147, 0.8);
       color: #000; }
@@ -176,6 +232,14 @@ h2 {
 
 .twitter-btn {
   position: fixed;
-  right: 15%;
+  right: 150px;
   bottom: 0;
   z-index: 99; }
+
+.card-wrapper {
+  margin: 5%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
