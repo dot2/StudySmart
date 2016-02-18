@@ -1,0 +1,17 @@
+<template name="Decks">
+    <article class="card-intro-deck">
+        <h2>{{name}}</h2>
+        <p>
+            {{desc}}
+        </p>
+        <p>
+            {{#each terms}}
+                <span class="term">
+                    {{name}} - {{desc}}
+                </span>
+            {{/each}}
+        </p>
+        <i class="fa fa-play"></i>
+        <a href="/flashcards/{{_id}}">View Details</a>
+    </article>
+</template>

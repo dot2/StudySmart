@@ -1,8 +1,12 @@
 <template name="UserHome">
     <div class="card-wrapper">
-        {{#each flashcards}}
-            {{> DeckSingle}}
-        {{/each}}
+        {{#if Template.subscriptionsReady}}
+            {{#each flashcards}}
+                {{> Decks}}
+            {{/each}}
+        {{else}}
+            <p>Loading</p>
+        {{/if}}
     </div>
     <!-- fab button to add decks -->
     <div class="fab">
