@@ -1,0 +1,15 @@
+<template name="DeckSingle">
+    <article class="card-intro-deck">
+        <h2>{{name}}</h2>
+        <p>
+            {{desc}}
+        </p>
+        <p>
+            {{#each terms}}
+                <span class="term">
+                    {{name}} - {{desc}}
+                </span>
+            {{/each}}
+        </p>
+    </article>
+</template>
