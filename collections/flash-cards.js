@@ -1,5 +1,27 @@
 FlashCards = new Mongo.Collection('flashcards');
 
+//allows user to insert into flashcard db if signed in
+FlashCards.allow({
+    insert: function(userId, doc) {
+        return !!userId;
+    }
+});
+
+
+Term = new SimpleSchema({
+    name: {
+        type: String,
+        label: "Question"
+    },
+    def: {
+        type: String,
+        label: "Answer"
+    }
+});
+
+
+
+
 FlashCardsSchema = new SimpleSchema({
     name: {
         type: String,
@@ -8,6 +30,9 @@ FlashCardsSchema = new SimpleSchema({
     desc: {
         type: String,
         label: "Description"
+    },
+    terms: {
+        type: [Term]
     },
     author: {
         type: String,
