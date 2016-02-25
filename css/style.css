@@ -38,7 +38,7 @@ h2 {
   background-image: url(../images/header-bkg.png);
   background-size: cover;
   background-position: center;
-  height: 25vh;
+  height: 30vh;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -67,7 +67,7 @@ h2 {
     font-size: 6rem; }
 
 .header {
-  height: 10vh !important;
+  height: 15vh !important;
   background-color: #85A4CE !important;
   background-image: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
@@ -120,7 +120,7 @@ h2 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 20vh;
+  height: 25vh;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -131,7 +131,7 @@ h2 {
           justify-content: center;
   background-color: #85A4CE;
   text-align: center;
-  padding: 20px; }
+  padding: 15px; }
   .intro-block h2 {
     color: #fff;
     size: 1.8rem;
@@ -143,7 +143,8 @@ h2 {
     font-weight: 300; }
 
 .intro-text {
-  max-width: 800px; }
+  max-width: 800px;
+  padding: 2%; }
 
 .card-example {
   display: -webkit-box;
@@ -198,7 +199,7 @@ h2 {
     font-weight: 300;
     font-size: 2rem; }
   .card span, .card-intro-deck span {
-    opacity: 0;
+    opacity: 1;
     font-size: 2rem;
     margin-top: 20px;
     text-align: center;
@@ -332,3 +333,24 @@ h2 {
     background-color: rgba(155, 232, 147, 0.8);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
     color: rgba(0, 0, 0, 0.8) !important; }
+
+.summary-wrapper {
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.deck-title {
+  padding: 20px;
+  font-size: 3rem;
+  color: black !important;
+  text-shadow: none; }

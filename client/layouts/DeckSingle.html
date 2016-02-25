@@ -1,4 +1,17 @@
 <template name="DeckSingle">
-    <h1>Boom</h1>
-    {{flashcard.name}}
+    <h1 class="deck-title">{{flashcard.name}}</h1>
+    <div class="summary-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                {{#each flashcard.terms}}
+                <div class="col-md-4">
+                            <div class="card">
+                                <h2 class="qustion">{{name}}</h2>
+                                <p class="answer">{{def}}</p>
+                            </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
 </template>
