@@ -250,7 +250,45 @@ h2
     display: flex
     flex-direction: row
     flex-wrap: wrap
-
+    .card
+        position: relative
+        cursor: pointer
+        overflow: hidden
+        width: 80%
+        padding: 10px
+        max-width: 800px
+        height: 300px
+        box-shadow: 2px 2px 5px $shadow
+        display: flex
+        align-items: center
+        justify-content: center
+        .reveal
+            text-align: center
+            font-size: 3rem
+            background-color: $accent
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            z-index: 2
+            margin-top: 100%
+            opacity: 0
+            transition: all 0.3s ease
+        .reveal-btn
+            position: absolute
+            background-color: rgba($accent, 0.8)
+            width: 100%
+            padding: 10px
+            bottom: 0px
+            left: 0
+            right: 0
+            text-align: center
+            color: rgba($white, 0.8)
+            transition: all 0.3s ease
+            &:hover
+                background-color: $accent
+                color: $white
 .deck-title
     padding: 20px
     font-size: 3rem
