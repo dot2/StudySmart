@@ -248,8 +248,9 @@ h2
 .summary-wrapper
     padding: 10px
     display: flex
-    flex-direction: row
-    flex-wrap: wrap
+    justify-content: center
+    flex-direction: column
+    align-items: center
     .card
         position: relative
         cursor: pointer
@@ -258,6 +259,7 @@ h2
         padding: 10px
         max-width: 800px
         height: 300px
+        margin: 15px
         box-shadow: 2px 2px 5px $shadow
         display: flex
         align-items: center
@@ -289,6 +291,11 @@ h2
             &:hover
                 background-color: $accent
                 color: $white
+.top
+    position: fixed
+    right: 30px
+    font-size: 3rem
+    padding: 15px
 .deck-title
     padding: 20px
     font-size: 3rem

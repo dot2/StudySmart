@@ -16,6 +16,15 @@ Term = new SimpleSchema({
     def: {
         type: String,
         label: "Answer"
+    },
+    termID: {
+        type: String,
+        autoValue: function() {
+            return Meteor.uuid();
+        },
+        autoform: {
+            type: "hidden"
+        }
     }
 });
 
